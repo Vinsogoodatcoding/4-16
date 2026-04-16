@@ -7,6 +7,6 @@ function player() {
     //setting up how it will be displayed
     this.show = function() {
         fill(255,0,0)
-        circle(this.x,this.y)
+        circle(this.x,this.y,50)
     }
 }
