@@ -21,11 +21,11 @@ function player() {
   }
 
   if (keyIsDown(UP_ARROW) === true) {
-    this.y += speed
+    this.y -= speed
   }
 
   if (keyIsDown(DOWN_ARROW) === true) {
-    this.y -= speed
+    this.y += speed
   }
 
 
