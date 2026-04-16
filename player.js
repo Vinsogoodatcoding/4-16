@@ -11,7 +11,7 @@ function player() {
     }
     
     this.update = function() {
-        
+        clear()
   // Update x and y if an arrow key is pressed.
   if (keyIsDown(LEFT_ARROW) === true) {
     this.x -= speed
