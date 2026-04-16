@@ -22,26 +22,9 @@ function setup() {
 
 
 function draw() {
-  // Update x and y if an arrow key is pressed.
-  if (keyIsDown(LEFT_ARROW) === true) {
-    player.x -= 1
-  }
-
-  if (keyIsDown(RIGHT_ARROW) === true) {
-    player.x += 1
-  }
-
-  if (keyIsDown(UP_ARROW) === true) {
-    
-  }
-
-  if (keyIsDown(DOWN_ARROW) === true) {
-    
-  }
+  player.update()
 
 
-  // Draw the circle.
-  circle(x, y, 5);
 }
 </script>
 </body>
