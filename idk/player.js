@@ -1,6 +1,5 @@
 //This is a JS object to store all of our player data
-let w = window.innerWidth;
-let h = window.innerHeight;
+
 function player() {
     this.x = w/2
     this.y = h/2

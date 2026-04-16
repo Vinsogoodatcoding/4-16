@@ -8,6 +8,43 @@
     <script src="player.js"></script>
 </head>
 <body>
+<script>
+let w = window.innerWidth;
+let h = window.innerHeight;
+//instantiate object
+var player = new player()
+
+function setup() {
+    createCanvas(w,h)
+    player.show()
+}
+
+
+
+function draw() {
+  // Update x and y if an arrow key is pressed.
+  if (keyIsDown(LEFT_ARROW) === true) {
     
+  }
+
+  if (keyIsDown(RIGHT_ARROW) === true) {
+    
+  }
+
+  if (keyIsDown(UP_ARROW) === true) {
+    
+  }
+
+  if (keyIsDown(DOWN_ARROW) === true) {
+    
+  }
+
+  // Style the circle.
+  fill(0);
+
+  // Draw the circle.
+  circle(x, y, 5);
+}
+</script>
 </body>
 </html>
