@@ -1,5 +1,5 @@
 //This is a JS object to store all of our player data
-let speed = 15
+let speed = 40
 function player() {
     this.x = w/2
     this.y = h/2
