@@ -6,6 +6,13 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
     <script src="player.js"></script>
+    <script src="obstacle.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
 <script>
@@ -13,6 +20,8 @@ let w = window.innerWidth;
 let h = window.innerHeight;
 //instantiate object
 var player = new player()
+var obstacle = new obstacle()
+var hit = false
 
 function setup() {
     createCanvas(w,h)
@@ -22,9 +31,12 @@ function setup() {
 
 
 function draw() {
+    clear()
     player.show()  
     player.update()
-    
+    obstacle.show()
+    hit = collideRectCircle(obstacle.x,obstacle.y,400,400,player.x,player.y,50)
+    console.log(hit) //temporary to detect if it is working
 
 }
 </script>

@@ -1,5 +1,5 @@
 //This is a JS object to store all of our player data
-let speed = 5
+let speed = 15
 function player() {
     this.x = w/2
     this.y = h/2
@@ -11,7 +11,7 @@ function player() {
     }
     
     this.update = function() {
-        clear()
+        
   // Update x and y if an arrow key is pressed.
   if (keyIsDown(LEFT_ARROW) === true) {
     this.x -= speed
