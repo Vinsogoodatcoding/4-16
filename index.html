@@ -12,6 +12,7 @@
         body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -26,7 +27,7 @@ var hit = false
 
 function setup() {
     createCanvas(w,h)
-    
+     
 }
 
 
@@ -39,7 +40,15 @@ function draw() {
     hit = collideRectCircle(obstacle.x,obstacle.y,400,400,player.x,player.y,50)
     console.log(hit) //temporary to detect if it is working
 
+    if (obstacle.x < -400) {
+        obstacle.x = window.innerWidth
+    }
+    if (hit === true) {
+        player.speed = 2
+    }
 }
+
+
 </script>
 </body>
 </html>
