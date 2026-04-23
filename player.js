@@ -1,9 +1,9 @@
 //This is a JS object to store all of our player data
-let speed = 40
+
 function player() {
     this.x = w/2
     this.y = h/2
-
+    this.sp
     //setting up how it will be displayed
     this.show = function() {
         fill(255,0,0)
